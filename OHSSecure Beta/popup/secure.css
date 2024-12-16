@@ -1,0 +1,48 @@
+.secure-app {
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    min-width: max-content;
+}
+
+.secure-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+}
+
+.secure-login-heading {
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.secure-login-button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blanchedalmond;
+    font-family: Verdana, sans-serif;
+    width: 100%;
+}
+
+.secure-login-button:hover {
+    background-color: bisque;
+}
+
+.hidden {
+    display: none;
+}
+
+.secure-login-input {
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f0f0f0;
+}

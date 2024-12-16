@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OHSSecure</title>
+        <link rel="stylesheet" href="secure.css">
+    </head>
+    <body>
+        <div class="secure-app">
+            <div class="secure-login">
+                <p class="secure-login-heading">OHSSecure - Auth</p>
+
+                <div>
+                    <button class="secure-login-button">Log In</button>
+                </div>
+                <div class="hidden">
+                    <form id="secure-login-form">
+                        <input required id="ohs-email" class="secure-login-input" placeholder="OHS Email" type="email">
+                        <input class="secure-login-button" type="submit">
+                    </form>
+                </div>
+
+                <div class="hidden">
+                    <p>Status: Encrypted</p>
+                </div>
+            </div>
+        </div>
+        
+        <script src="secure.js"></script>
+    </body>
+</html>

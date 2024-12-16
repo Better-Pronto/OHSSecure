@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "OHSSecure",
+  "version": "0.01",
+
+  "description": "Provides security to messages sent and received through Pronto for OHS students.",
+
+  "permissions": [
+    "declarativeNetRequest",
+    "webRequest",
+    "storage",
+    "tabs"
+  ],
+  
+  "host_permissions": [
+    "*://*/*"
+  ],
+  
+  "background": {
+    "service_worker": "currentChat.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://stanfordohs.pronto.io/*"
+      ],
+      "js": [
+        "bundle.js"
+      ]
+    }
+  ],
+
+  "action": {
+    "default_icon": {
+      "19": "icons/lock.png"
+    },
+    "default_title": "OHSSecure",
+    "default_popup": "popup/secure.html"
+  }
+}
